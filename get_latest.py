@@ -13,7 +13,9 @@ def main():
     version_name = blupd8.PROJECT + '-' + latest
 
     if version_name not in have:
-        blupd8.download(latest, HOME)
+        blupd8.download(latest, HOME, 'windows', 'zip')
+    else:
+        latest
 
 
 def have_versions():
